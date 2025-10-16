@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilosemp.css">
+    <link rel="icon" type="image/png" href="ImagenesEmp/favicon.jpg">
+  <title>YRG Photography</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  .galeria-img {
+      width: 100%;
+      height: 250px;
+      max-width: 200px; 
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .galeria-img:hover {
+      transform: scale(1.05);
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .galeria-img {
+        max-width: 100%;
+      }
+    }
+    </style>
+</head>
+<body class="bg-light text-dark">
+
+  
+  <header class="bg-dark text-white py-3 shadow-sm">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+      <a href="#" class="navbar-brand d-flex align-items-center text-white text-decoration-none mb-2 mb-md-0">
+        <img src="ImagenesEmp/Logo.jpg" alt="Logo YRG" width="60" height="60" class="me-2 rounded-circle border border-light">
+        <span class="fs-3 fw-bold">YRG Photography</span>
+      </a>
+      <p class="mb-0 fst-italic text-secondary">“La calidad de una buena imagen vende más que mil palabras”</p>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarYRG">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarYRG">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="#deportes" class="nav-link">Deportes</a></li>
+          <li class="nav-item"><a href="#ropa" class="nav-link">Ropa</a></li>
+          <li class="nav-item"><a href="#comida" class="nav-link">Comida</a></li>
+          <li class="nav-item"><a href="#tecnologia" class="nav-link">Tecnología</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container my-5 text-center">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="p-4 bg-white shadow-sm rounded">
+          <h2 class="text-primary fw-bold">Misión</h2>
+          <p>Ofrecer fotografías profesionales de productos para potenciar las ventas online,
+            transmitiendo confianza y calidad en cada imagen.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-4 bg-white shadow-sm rounded">
+          <h2 class="text-success fw-bold">Visión</h2>
+          <p>Ser reconocidos como la empresa líder en fotografía de productos,
+            ayudando a que cada cliente muestre lo mejor de su negocio al mundo digital.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="deportes" class="galeria container my-5 text-center">
+    <h2 class="text-uppercase text-primary fw-bold mb-4">Futboleros</h2>
+    <div>
+      <img src="https://tse1.mm.bing.net/th/id/OIP.OxRZek7ZAogmwDcVLYeEzQAAAA?rs=1&pid=ImgDetMain" class="galeria-img img-fluid">
+      <img src="https://image.freepik.com/foto-gratis/balon-futbol-tacos-campo-futbol_93675-39321.jpg" class="galeria-img img-fluid">
+      <img src="https://www.selectchile.cl/wp-content/uploads/2020/03/medias-futbol-select2023.jpg" class="galeria-img img-fluid">
+        <img src="ImagenesEmp/GuantesArquero.jpg" class="galeria-img img-fluid">
+        <img src="ImagenesEmp/Espinilleras.jpg" class="galeria-img img-fluid">
+        <img src="ImagenesEmp/fut.jpg" class="galeria-img img-fluid">
+        <img src="ImagenesEmp/futwhite.jpg" class="galeria-img img-fluid">
+        <img src="ImagenesEmp/quineciologo.jpg" class="galeria-img img-fluid">
+        <img src="ImagenesEmp/mundial.jpg" class="galeria-img img-fluid">
+        <img src="ImagenesEmp/predator.jpg" class="galeria-img img-fluid">
+    </div>
+  </section>
+
+  <section id="ropa" class="galeria container my-5 text-center">
+    <h2 class="text-uppercase text-primary fw-bold mb-4">Ropa de Segunda Mano y accesorios</h2>
+    <div>
+      <img src="ImagenesEmp/traje.jpg" class="galeria-img img-fluid">
+      <img src="ImagenesEmp/oufit2.jpg" class="galeria-img img-fluid">
+      <img src="ImagenesEmp/Trajes2.jpg" class="galeria-img img-fluid">
+      <img src="ImagenesEmp/oufit3.jpg" class="galeria-img img-fluid">
+      <imag src="ImagenesEmp/oufit1.jpg" class="galeria-img img-fluid">
+      <img src="ImagenesEmp/Cartera.jpg" class="galeria-img img-fluid">
+      <img src="ImagenesEmp/oufit4.jpg" class="galeria-img img-fluid">
+      <img src="ImagenesEmp/oufit6.jpg" class="galeria-img img-fluid">
+      <img src="ImagenesEmp/Trajes.jpg" class="galeria-img img-fluid">
+    </div>
+  </section>
+
+  <section id="comida" class="galeria container my-5 text-center">
+    <h2 class="text-uppercase text-primary fw-bold mb-4">Comida China</h2>
+    <div>
+      <img src="ImagenesEmp/Costillas de cerdo.jpg" class="galeria-img img-fluid">
+      <img src="ImagenesEmp/Chow Mein.jpg" class="galeria-img img-fluid">
+      <img src="ImagenesEmp/Arroz.jpg" class="galeria-img img-fluid">
+      <img src="ImagenesEmp/Fideos.jpg" class="galeria-img img-fluid">
+      <img src="ImagenesEmp/Wantans.jpg" class="galeria-img img-fluid">
+      <img src="ImagenesEmp/Pollo Agridulce.jpg" class="galeria-img img-fluid">
+      <img src="ImagenesEmp/combo.jpg" class="galeria-img img-fluid">
+      <img src="ImagenesEmp/arroz2.jpg" class="galeria-img img-fluid">
+      <img src="ImagenesEmp/vegetables.jpg" class="galeria-img img-fluid">
+      <img src="ImagenesEmp/antojito.jpg" class="galeria-img img-fluid">
+    </div>
+  </section>
+
+  <section id="tecnologia" class="galeria container my-5 text-center">
+    <h2 class="text-uppercase text-primary fw-bold mb-4">Productos Tecnologicos</h2>
+    <div>
+      <img src="ImagenesEmp/airpops.jpg" class="galeria-img img-fluid">
+      <img src="https://th.bing.com/th/id/OIP._0ontZRLb-mvrNqlVOBXVgHaEK?w=329&h=184&c=7&r=0&o=7&cb=12&dpr=1.1&pid=1.7&rm=3" class="galeria-img img-fluid">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVnnbXWQXoiD6O-CbSJKduljVsIAjNVRCz_Q&s" class="galeria-img img-fluid">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc5EdpmpYscNXHU-PSm7uXXeMcX2GDZi8kmQ&s" class="galeria-img img-fluid">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUfLMVrvJNm2I5PLaqxIuSueRLDfX_1ppuCQ&s"class="galeria-img img-fluid">
+      <img src="data:image/jpeg;base64,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" class="galeria-img img-fluid">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj3nVRbQuKUJ1zi7bjIEvoEAs-2UgPc9Lbvg&s" class="galeria-img img-fluid">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKAqRe8vFqCyiKatxeuecKHZ27BZiaJWgqvg&s" class="galeria-img img-fluid">
+    </div>
+  </section>
+
+
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <img src="ImagenesEmp/Logo.jpg" alt="Logo inferior" width="70" height="70" class="mb-2 rounded-circle border border-light">
+      <p class="mb-1">© 2025 YRG Photography - Fotografía profesional de productos</p>
+       <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="contactanos.html" class="btn btn-outline-warning btn-sm text-dark">Contactanos</a>
+      </div>
+      <p><b><i>
+        Conectar con cada uno de ustedes por medio de mis fotografias es la manera mas eficiente de crecer juntos.
+        Tengan en cuanta que este sitio web esta en constante actualizacion, eh ira mejorando muchisimo,
+        Grasias por su apoyo.
+      </i>
+      </b>
+      </p>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
